@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prescription OCR Scanner</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tesseract.js/2.1.0/tesseract.min.js"></script>
+</head>
+<body>
+    <div class="container">
+        <h1>Prescription Error Detection</h1>
+        <input type="file" id="imageInput" accept="image/*">
+        <button onclick="processImage()">Scan Prescription</button>
+        <div id="output">
+            <h2>Extracted Text:</h2>
+            <p id="extractedText">No text extracted yet.</p>
+            <h2>Possible Errors:</h2>
+            <p id="errorMessage">No errors detected.</p>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
